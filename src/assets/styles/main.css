@@ -1,0 +1,38 @@
+@import 'navMenu.css';
+@import 'card.css';
+@import 'topPanel.css';
+
+@font-face {
+  font-family: 'Segoe';
+  /* src: url('../fonts/Segoe_UI.ttf') */
+  src: url('../fonts/SegoeUI.woff')
+}
+
+:root {
+  --color-gray-light: #C4C4C4;
+  --color-gray-darker: #9EA2A1;
+  --color-green: #1EA11E;
+  --color-red: #C92627;
+  --color-black: #2E2C33;
+  font-family: 'Segoe';
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+div#root {
+  display: flex;
+}
+
+#mainLayout {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  width: calc(100vw - 60px);
+  height: 100vh;
+  background-color: #F1F1F1;
+}

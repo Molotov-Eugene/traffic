@@ -1,0 +1,38 @@
+.nav-menu-wrapper {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+#logo {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 10px;
+  height: 57px;
+}
+
+#logo > img {
+  width: auto;
+  height: 42px;
+}
+
+#logo::after {
+  content: '';
+  margin-top: 10px;
+  border-bottom: 1px solid var(--color-gray-darker);
+  opacity: 18%;
+  width: 57px;
+}
+
+#nav-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+#nav-menu > div {
+  margin-top: 45px;
+  display: flex;
+  align-self: center;
+}
+
