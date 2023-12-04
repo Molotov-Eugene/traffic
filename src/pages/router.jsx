@@ -18,7 +18,7 @@ const router = createBrowserRouter([
         element: <Events />,
       },
       {
-        path: 'analytics',
+        path: 'tables',
         element: <Analytics />,
       },
       {

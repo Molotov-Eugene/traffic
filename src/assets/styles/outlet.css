@@ -1,0 +1,7 @@
+#objects {
+  display: flex;
+  flex-flow: wrap row;
+  align-content: flex-start;
+  gap: 1rem;
+  padding: 25px
+}
