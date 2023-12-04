@@ -13,6 +13,9 @@ export default defineConfig(({ command, mode }) => {
       define: {
         VITE_KV_REST_API_URL: JSON.stringify(env.KV_REST_API_URL),
         VITE_KV_REST_API_TOKEN: JSON.stringify(env.KV_REST_API_TOKEN),
+
+        // KV_REST_API_URL: JSON.stringify(env.KV_REST_API_URL),
+        // KV_REST_API_TOKEN: JSON.stringify(env.KV_REST_API_TOKEN),
         'process.env': {},
       }
     }
