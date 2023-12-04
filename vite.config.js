@@ -6,7 +6,7 @@ export default defineConfig(() => {
     {
       plugins: [react()],
       define: {
-        'process': {},
+        'process.env': {},
       }
     }
   )
