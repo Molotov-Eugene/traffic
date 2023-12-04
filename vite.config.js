@@ -5,6 +5,9 @@ export default defineConfig(() => {
   return (
     {
       plugins: [react()],
+      define: {
+        'process': {},
+      }
     }
   )
 });
