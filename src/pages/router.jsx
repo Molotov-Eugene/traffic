@@ -19,11 +19,11 @@ const router = createBrowserRouter([
       },
       {
         path: 'tables',
-        element: <Analytics />,
+        element: <Dashboards />,
       },
       {
         path: 'dashboards',
-        element: <Dashboards />,
+        element: <Analytics />,
       },
 
       {

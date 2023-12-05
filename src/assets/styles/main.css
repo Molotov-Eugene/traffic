@@ -6,8 +6,14 @@
 
 @font-face {
   font-family: 'Segoe';
-  /* src: url('../fonts/Segoe_UI.ttf') */
-  src: url('../fonts/SegoeUI.woff')
+  src: url('../fonts/SegoeUI.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Segoe';
+  src: url('../fonts/SegoeUISemiBold.woff');
+  font-weight: 600;
 }
 
 :root {

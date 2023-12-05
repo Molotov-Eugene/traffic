@@ -1,12 +1,13 @@
 const initialState = {
-  activeFilter: 'all',
+  filter: 'all',
+  search: '',
 }
-
-
 export function filterReducer(state = initialState, action) {
   switch (action.type) {
-    case 'CHOOSE_FILTER':
-      return { activeFilter: action.payload };
+    case 'BUTTONS_FILTER':
+      return { ...state, filter: action.payload };
+    case 'SEARCH_FILTER':
+      return { ...state, search: action.payload };
     default:
       return state;
   }

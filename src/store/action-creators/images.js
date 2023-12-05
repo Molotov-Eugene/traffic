@@ -5,7 +5,7 @@ export function fetchImages() {
     try {
       dispatch({ type: 'FETCH_IMAGES' });
       const kvClient = await kv(); 
-      const response = await kvClient.get('images');
+      const response = await kvClient.get('images2');
       dispatch({ type: 'FETCH_IMAGES_SUCCESS', payload: response });
     } catch (e) {
       console.log(e)

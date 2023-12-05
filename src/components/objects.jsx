@@ -8,12 +8,13 @@ export default function() {
     fetchCameras,
     fetchImages,
     fetchObjects,
-    updateObjectStatus,
   } = useActions();
+
 
   const { objects, loading, error } = useSelector(state => state.objects)
   const cameras = useSelector(state => state.cameras);
-  const images = useSelector(state => state.images)
+  const images = useSelector(state => state.images);
+  const { filter, search } = useSelector(state => state.filter);
 
   useEffect(() => {
     fetchCameras();
@@ -21,7 +22,8 @@ export default function() {
     fetchObjects();
   }, []);
 
-  if (loading || images.loading || cameras.loading) {
+
+  if (loading) {
     return <h1> Идет загрузка </h1>
   }
 
@@ -29,9 +31,12 @@ export default function() {
     return <h1>{error ?? objects.error}!</h1>
   }
 
+
+  const filtered = filter === 'all' ? objects : objects.filter((o) => o.status === filter);
+  const renderList = filtered.filter((o) => o.name.toLowerCase().includes(search.toLowerCase()));
   return (
     <div id='objects'>
-      {objects.map((object) => <Card key={object.id} objectData={{ object, cameras, images }} />)}
+      { renderList.map((object) => <Card key={object.id} objectData={{ object, cameras, images }} />)}
     </div>
   );
 }

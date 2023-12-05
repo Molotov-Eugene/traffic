@@ -28,11 +28,28 @@
 #nav-menu {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 #nav-menu > div {
-  margin-top: 45px;
+  position: relative;
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
   display: flex;
-  align-self: center;
+  justify-content: center;
+  cursor: pointer;
 }
+
+#svg-objects.active::before,
+#svg-tables.active::before,
+#svg-dashboards.active::before,
+#svg-events.active::before {
+  content: url('../svg/menu_line.svg');
+  position: absolute;
+  left: 0;
+  top: -25%;
+}
+
+
 

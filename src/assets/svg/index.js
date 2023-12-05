@@ -6,6 +6,7 @@ import events from './events.svg';
 import dashboards from './dashboards.svg';
 import analytics from './analytics.svg';
 import objects from './objects.svg';
+import menuLine from './menu_line.svg';
 
 //filters
 
@@ -19,13 +20,14 @@ import filterNotConfigured from './filter_not_configured.svg';
 
 import cardStatus from './object_status.svg';
 import cardSettings from './settings.svg';
-import cardStart from './start.svg' ;
+import cardStart from './start.svg';
 import cardPause from './pause.svg';
 import cardEvents from './card_event.svg';
 import cardAnalytics from './card_analytics.svg';
 import cardTables from './card_tables.svg';
 import cardControlPanelStart from './card_control_panel_start.svg';
 import cardControlPanelPause from './card_control_panel_pause.svg';
+import stub from './stub.svg';
 
 //misc
 
@@ -38,6 +40,7 @@ const icons = {
     dashboards,
     analytics,
     objects,
+    menuLine,
   },
   filter: {
     all: filterAll,
@@ -56,6 +59,7 @@ const icons = {
     tables: cardTables,
     cpStart: cardControlPanelStart,
     cpPause: cardControlPanelPause,
+    stub,
   },
   misc: {
     search,
